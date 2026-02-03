@@ -1,0 +1,200 @@
+/* Сброс стилей */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background-color: #212121;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page {
+  display: none;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 16px 16px;
+}
+.page.active {
+  display: block;
+}
+
+/* === ПОИСК === */
+.search-container {
+  position: sticky;
+  top: 0;
+  background: #212121;
+  padding: 12px 16px;
+  z-index: 10;
+}
+.search-box {
+  background: #181818;
+  border-radius: 12px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.search-icon {
+  color: #aaa;
+  font-size: 18px;
+}
+.search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+.search-input::placeholder {
+  color: #aaa;
+}
+
+/* === Информация о магазине === */
+.info-box {
+  background: #181818;
+  border-radius: 12px;
+  padding: 14px;
+  margin: 16px 0;
+  text-align: center;
+  line-height: 1.5;
+}
+.info-box a {
+  color: #8774e1;
+  text-decoration: none;
+}
+
+/* === Заголовок раздела === */
+.section-title {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 16px 0 12px;
+  color: #aaa;
+}
+
+/* === Категории === */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.category-btn {
+  background: #181818;
+  border: none;
+  color: white;
+  padding: 16px 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category-btn:hover {
+  background: #2a2a2a;
+}
+
+/* === Кнопка корзины === */
+#cart-btn {
+  background: #8774e1;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* === Футер === */
+.footer {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+/* === Каталог === */
+.catalog-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* === Товары === */
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.product-card {
+  background: #181818;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+}
+.product-image {
+  width: 60px;
+  height: 60px;
+  background: #333;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 12px;
+}
+.product-info {
+  flex: 1;
+}
+.product-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+.product-price {
+  color: #8774e1;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+.add-to-cart-btn {
+  background: #8774e1;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/* === Корзина === */
+.cart-total {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 16px 0;
+  color: #8774e1;
+}
+.checkout-btn {
+  background: #8774e1;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+}
